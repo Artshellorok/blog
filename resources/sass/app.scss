@@ -1,0 +1,48 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+.card-body{
+  font-family: 'Roboto', sans-serif;
+}
+.navbar{
+  padding: 0;
+}
+.bg-primary{
+  background-color: #1d1e20;
+}
+.current{
+  background-color: #e84a4a;
+}
+.nav-links > li{
+  padding: 18px;
+  &:hover{
+    cursor:pointer;
+  }
+}
+.nav-links > li > a{
+  font-size: 18px;
+  color: #dddddd !important;
+}
+.home{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-links > li:hover a{
+  color: rgba(255,255,255,1) !important;
+}
+.search{
+  border: none !important;
+  background: #242527;
+}
+.hr-red{
+  background: #e84a4a;
+  height: 3px;
+  margin: 0 !important;
+  border:none !important;
+}
