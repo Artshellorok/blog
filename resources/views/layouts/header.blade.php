@@ -43,7 +43,7 @@
                 </li>
             </ul>
         </div>
-        <button type="button" class="btn btn-dark search ml-auto rounded" aria-label="Close">
+        <button type="button" class="btn btn-dark search ml-auto rounded" aria-label="Close" @click='$refs.search.reveal()'>
             <img src="img/search.png" alt="search" class="rounded">
         </button>
     </div>

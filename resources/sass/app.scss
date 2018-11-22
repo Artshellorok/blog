@@ -46,3 +46,12 @@
   margin: 0 !important;
   border:none !important;
 }
+.search-popover{
+  background: rgba(26, 26, 27, 1);
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: 1;
+  color: #000000;
+}

@@ -8,6 +8,7 @@
     </head>
     <body>
         <div id ='app'>
+            <app-search ref='search'></app-search>
             @include('layouts/header')
             @yield('content')
         </div>
