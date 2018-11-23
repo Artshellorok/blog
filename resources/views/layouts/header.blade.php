@@ -1,12 +1,41 @@
-<nav class="navbar navbar-dark bg-primary">
-        <div class='container'>
-            <a class="navbar-brand" href="#">Navbar</a>
-        </div>
-</nav> 
-<div style='height:300px'>
+<nav class="navbar navbar-dark bg-primary navbar-expand-lg nav-top fixed-top">
     <div class='container'>
-        <h1>РИКЛАМА КУПИТЕ УЖЕ СЕГОДНЯ СО СКИДКОЙ 5 ПРАЦИНТАВ</h1>
+        <a href="#" class='navbar-profile rounded'>@if(1)Artshellorok @else Login @endif</a>
+        
+        <ul class="navbar-nav nav-logos mr-auto">
+            <li class="nav-item">
+                <a href="#">
+                    Twitter
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    VK
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    Github
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    Facebook
+                </a>
+            </li>
+        </ul>
+        <div class='dropdown ml-auto'>
+            <div id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class='dropdown-country-btn'>
+                <img src='img/us.svg' width='25px'>
+            </div>
+            <div class="dropdown-menu dropdown-country bg-primary" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><img src='img/ru.svg' width='25px'></a>
+            </div>
+        </div>
     </div>
+</nav>
+<div style='height:300px; margin-top: 55px' class='container'>
+        <img src='img/ad.jpg' class='justify-content-center'>
 </div>
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
     <div class='container'>

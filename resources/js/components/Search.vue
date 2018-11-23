@@ -17,9 +17,8 @@
                 const targets = this.$el;
                 this.$anime({
                     targets,
-                    translateY: [
-                        { value: '-100%', duration: 0},
-                        { value: '0', duration: 500}
+                    top: [
+                        { value: '0', duration: 450}
                     ],
                     easing: 'easeInOutSine',
                 });
@@ -28,9 +27,8 @@
                 const targets = this.$el;
                 this.$anime({
                     targets,
-                    translateY: [
-                        { value: '0', duration: 0},
-                        { value: '-100%', duration: 500}
+                    top: [
+                        { value: '-100%', duration: 450}
                     ],
                     easing: 'easeInOutSine',
                 });
