@@ -32,7 +32,7 @@ Vue.component('app-search', require('./components/Search.vue'));
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
 });
  
 

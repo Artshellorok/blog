@@ -1,29 +1,32 @@
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg nav-top fixed-top">
     <div class='container'>
         <a href="#" class='navbar-profile rounded'>@if(1)Artshellorok @else Login @endif</a>
-        
-        <ul class="navbar-nav nav-logos mr-auto">
-            <li class="nav-item">
-                <a href="#">
-                    Twitter
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#">
-                    VK
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#">
-                    Github
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#">
-                    Facebook
-                </a>
-            </li>
-        </ul>
+        <div class='mr-auto d-flex flex-row'>
+            <div class='nav-logos-line-1'></div>
+            <ul class="navbar-nav nav-logos">
+                <li class="nav-item">
+                    <a href="#">
+                        @svg('img/github.svg')
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        @svg('img/vk.svg')            
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        @svg('img/twitter.svg')
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        @svg('img/facebook.svg')
+                    </a>
+                </li>
+            </ul>
+            <div class='nav-logos-line-2'></div>
+        </div>
         <div class='dropdown ml-auto'>
             <div id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class='dropdown-country-btn'>
                 <img src='img/us.svg' width='25px'>
@@ -34,8 +37,7 @@
         </div>
     </div>
 </nav>
-<div style='height:300px; margin-top: 55px' class='container'>
-        <img src='img/ad.jpg' class='justify-content-center'>
+<div style='height: 200px; margin-top: 55px' class='container'>
 </div>
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
     <div class='container'>

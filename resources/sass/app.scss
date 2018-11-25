@@ -32,9 +32,35 @@ body{
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.nav-logos svg{
+  width: 20px !important;
+  height: 20px !important;
+  path{
+    transition: 0.1s ease-in-out;
+  }
+  &:hover path{
+    fill: #fff;
+  }
+}
 .nav-logos > li {
   padding-left: 10px;
   padding-right: 10px;
+}
+.nav-logos img {
+  display:block;
+}
+.nav-logos ul{
+  float:left;
+}
+.nav-logos-line-1{
+  height: 53px;
+  border-left: 1px solid #171719;
+  border-right: 1px solid #2b2c2f;
+}
+.nav-logos-line-2{
+  height: 53px;
+  border-left: 1px solid #2b2c2f;
+  border-right: 1px solid #171719;
 }
 .navbar-profile{
   padding: 10px;
@@ -95,4 +121,11 @@ body{
   width: 100%;
   z-index: 2;
   color: #000;
+}
+.hide-scrollbar{
+  position: fixed;
+  top:0; right:0; bottom:0; left:0;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }

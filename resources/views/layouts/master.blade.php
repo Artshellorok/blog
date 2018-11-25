@@ -7,7 +7,7 @@
         <title>Название</title>
     </head>
     <body>
-        <div id ='app'>
+        <div id ='app' >
             <app-search ref='search'></app-search>
             @include('layouts/header')
             @yield('content')

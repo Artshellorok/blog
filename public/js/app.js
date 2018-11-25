@@ -47437,20 +47437,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {},
-
     methods: {
         reveal: function reveal() {
             var targets = this.$el;
-            this.$anime({
+            var animate = this.$anime({
                 targets: targets,
                 top: [{ value: '0', duration: 450 }],
                 easing: 'easeInOutSine'
             });
+            animate.complete = function () {
+                document.body.style.overflow = 'hidden';
+            };
         },
         hide: function hide() {
             var targets = this.$el;
-            this.$anime({
+            document.body.style.overflow = 'visible';
+            var animate = this.$anime({
                 targets: targets,
                 top: [{ value: '-100%', duration: 450 }],
                 easing: 'easeInOutSine'
