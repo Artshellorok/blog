@@ -33,6 +33,8 @@
             </div>
             <div class="dropdown-menu dropdown-country bg-primary" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#"><img src='img/ru.svg' width='25px'></a>
+                <a class="dropdown-item" href="#"><img src='img/ru.svg' width='25px'></a>
+                
             </div>
         </div>
     </div>
@@ -40,7 +42,7 @@
 <div style='height: 200px; margin-top: 55px' class='container'>
 </div>
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-    <div class='container'>
+    <div class='container' style='padding: 0'>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

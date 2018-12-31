@@ -13924,8 +13924,8 @@ Vue.component('app-search', __webpack_require__(41));
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
 var app = new Vue({
+  mixins: document.mixin ? [document.mixin] : false,
   el: '#app'
 });
 
