@@ -1,12 +1,12 @@
 .left{
     padding:0 !important;
 }
-.left > div{
-    margin-top: 25px;
+.posts{
+    padding-left: 20px;
+    padding-right: 0;
 }
-.social{
-    width: 100%;
-    padding: 0 !important;
+.left > div{
+    margin-bottom: 25px;
 }
 .social > div{
     min-width: 120px;
@@ -83,9 +83,6 @@
     font-weight: 300 !important;
     font-size:18px;
 }
-.widget > a:hover{
-    text-decoration: none;
-}
 .widget:after{
     content: '';
     position: absolute;
@@ -99,7 +96,6 @@
 }
 .poll{
     margin-top: 30px;
-    margin-bottom: 50px;
 }
 .poll > h2{
     color: #131313;
@@ -143,9 +139,56 @@
 .custom-form-check input[type="radio"]:checked ~ label{
     color: #e84a4a;
 }
-
 .btn-poll{
     margin-top: 20px;
     font-size: 15px;
     margin-right: 10px;
+}
+.tags{
+    margin-top: 30px;
+}
+.tags > a{
+    float: left;
+    background: #2c2c2c;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: 0.1s ease-in-out;
+}
+.tags > a:hover{
+    background: #e84a4a;
+}
+.posts > div{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.posts > div > div{
+    margin-bottom: 20px;
+}
+.posts > div > div > p {
+    font-weight: 300;
+    font-size: 14px;   
+    color: #a3abaf;
+}
+.posts p{
+    max-width: 646px;
+    margin-top: 10px;
+    color: #585858;
+    font-weight: 400;
+    font-size: 16px;
+}
+.posts a{
+    margin-top: 10px;
+    color: #2768d1;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+}
+.posts > div > a{
+    font-size: 16px;
 }

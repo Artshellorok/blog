@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:100,300,400,500');
 
 // Variables
 @import 'variables';
@@ -12,9 +12,17 @@ $mynewcolor:#e84a4a;
 .btn-danger {
     @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
 }
-
+a:hover{
+  text-decoration: none !important;
+}
 body{
   font-family: 'Roboto', sans-serif;
+}
+.container{
+  padding: 0;
+}
+.row{
+  margin: 0;
 }
 .bg-primary{
   background-color: #1d1e20;
@@ -116,8 +124,9 @@ body{
 .hr-red{
   background: #e84a4a;
   height: 3px;
-  margin: 0 !important;
+  margin-top: 0 !important;
   border:none !important;
+  margin-bottom: 25px !important;
 }
 .search-popover{
   background: rgba(26, 26, 27, 1);
@@ -134,4 +143,61 @@ body{
   height: 100%;
   max-height: 100%;
   overflow: hidden;
+}
+footer{
+  margin-top: 80px;
+  border-top: solid 1px #de4a4a;
+  background: #1d1e20;
+  padding-top: 45px;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.footer__about{
+  margin-top: 45px;
+  font-size: 14px;
+  color: #bbbbbb;
+  font-weight: 300;
+}
+.footer__email{
+  margin-top: 30px;
+}
+.footer__newsletter_description{
+  margin-top: 20px;
+  max-width: 300px;
+}
+.footer__mail{
+  color: #fff;
+}
+.footer__mail:hover{
+  color: #fff;
+}
+.footer__form button{
+  cursor: pointer;
+  padding: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none !important;
+  background: #e84a4a;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.footer__form button:focus{
+  outline: none !important;
+  box-shadow: 0 0 0 1pt #e84a4a;
+}
+.footer__form input{
+  height: 45px;
+  font-size: 12px;
+  font-family: Roboto;
+  color: #585858;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.footer__form img{
+  width: 15px;
+  height: 15px;
 }
