@@ -16,6 +16,7 @@ Vue.use(VueAnime);
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
+Vue.component('app-login', require('./components/Login.vue'));
 
 Vue.component('app-search', require('./components/Search.vue'));
 

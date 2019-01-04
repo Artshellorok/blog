@@ -13,6 +13,7 @@
     <body>
         <div id ='app' >
             <app-search ref='search'></app-search>
+            <app-login ref='login'></app-login>
             @include('layouts/header')
             <div class='container'>    
                 <div class='row'>

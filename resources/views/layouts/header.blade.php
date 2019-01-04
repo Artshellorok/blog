@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-primary navbar-expand-lg nav-top fixed-top">
     <div class='container'>
-        <a href="#" class='navbar-profile rounded'>@if(0)Artshellorok @else Login @endif</a>
+        <a href="#" class='navbar-profile rounded'  @click='$refs.login.reveal()'>@if(0)Artshellorok @else Login @endif</a>
         <div class='mr-auto d-flex flex-row'>
             <div class='nav-logos-line-1'></div>
             <ul class="navbar-nav nav-logos">
