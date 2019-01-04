@@ -36,9 +36,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='col-sm-9 posts'>
-                        @yield('content')
-                    </div>
+                    @yield('content')
                 </div>
             </div>
             @include('layouts/footer')
