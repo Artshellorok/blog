@@ -54,26 +54,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Business</a>
+                    <a class="nav-link" href="#">Голосования</a>
                 </li>
+                @if(1)
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Travel</a>
+                    <a class="nav-link" href="/admin/add">Добавить пост</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">People</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
-                </li>
-                <li class="nav-item">
-                     <a class="nav-link" href="#">Music</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Forum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                @endif
             </ul>
         </div>
         <button type="button" class="btn btn-dark search ml-auto rounded" aria-label="Close" @click='$refs.search.reveal()'>

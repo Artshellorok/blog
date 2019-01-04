@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:100,300,400,500');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+$mynewcolor:#e84a4a;
+
+.btn-danger {
+    @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+a:hover{
+  text-decoration: none !important;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  padding: 0;
+}
+.navbar{
+    padding: 0;
+  }
+  .nav-top{
+    z-index: 1 !important;
+  }
+  .nav-top a{
+    font-size: 12px;
+    color: #c0c0c0;
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  .nav-logos{
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .nav-logos svg{
+    width: 20px !important;
+    height: 20px !important;
+    path{
+      transition: 0.1s ease-in-out;
+    }
+    &:hover path{
+      fill: #fff;
+    }
+  }
+  .nav-logos > li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-logos img {
+    display:block;
+  }
+  .nav-logos ul{
+    float:left;
+  }
+  .nav-logos-line-1{
+    height: 53px;
+    border-left: 1px solid #171719;
+    border-right: 1px solid #2b2c2f;
+  }
+  .nav-logos-line-2{
+    height: 53px;
+    border-left: 1px solid #2b2c2f;
+    border-right: 1px solid #171719;
+  }
+  .navbar-profile{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #242527;
+    margin-right: 25px;
+  }
