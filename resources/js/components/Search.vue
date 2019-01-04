@@ -2,7 +2,7 @@
     <div class="search-popover">
         <div class='modal-dialog'>
             <div class='modal-content'>
-                <h1 @click='hide'>dasdass</h1>
+                <h1 @click='hide'>dasda</h1>
             </div>
         </div>
     </div>

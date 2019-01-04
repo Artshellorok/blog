@@ -1,7 +1,7 @@
 <template>
     <div class="search-popover">
         <div class='modal-dialog'>
-            <div class='modal-content'><h1 @click='hide'>dasdass</h1></div>
+            <div class='modal-content'><h1 @click='hide'>esketit</h1></div>
         </div>
     </div>
 </template>
