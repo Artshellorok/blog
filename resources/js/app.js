@@ -32,7 +32,7 @@ Vue.component('app-search', require('./components/Search.vue'));
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 const app = new Vue({
-    mixins: document.mixin ? [document.mixin] : false,
+    mixins: document.mixin ? [document.mixin] : false,  
     el: '#app',
 });
  

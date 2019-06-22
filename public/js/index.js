@@ -76,6 +76,7 @@ module.exports = __webpack_require__(51);
 /***/ 51:
 /***/ (function(module, exports) {
 
+console.log('tupaflex');
 document.mixin = {};
 
 /***/ })

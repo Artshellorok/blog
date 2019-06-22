@@ -19,8 +19,11 @@ class CompileJs{
 
 mix.extend('compilejs', new CompileJs());
 */
+//console.log(mix.esketit);
 mix.sass('resources/sass/app.scss', 'public/css')
     .js('resources/js/app.js', 'public/js')
     .js('resources/js/index.js', 'public/js')
+    .js('resources/js/admin.add.js', 'public/js/admin.add.js')
     .sass('resources/sass/admin.scss', 'public/css');
+    
     

@@ -13,6 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        view()->composer('*', function($view){
+            view()->share('view_name', $view->getName());
+        });
         \Blade::directive('svg', function($arguments) {
             libxml_disable_entity_loader(false);
             // Funky madness to accept multiple arguments into the directive
@@ -29,9 +32,14 @@ class AppServiceProvider extends ServiceProvider
     
             return $output;
         });
-        view()->composer('*', function($view){
-            view()->share('view_name', $view->getName());
-        });  
+        \Blade::directive('css', function($view_name) {
+            return \Route::current()->uri;
+            return file_get_contents(public_path() . "/css/$view_name.css");
+        });
+        \Blade::directive('js', function($view_name) {
+            return file_get_contents( public_path() . "/js/$view_name.js");
+        });
+          
     }
 
     /**
